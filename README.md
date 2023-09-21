@@ -5,4 +5,5 @@ This project is Underdevelopment, What Im trying to make is to build a phishing 
 the Logs input, and 2 is Webpage for phishing for users input, and if the user input in our phishing page it will sent into our descktop Application.
 
 
-![Uploading Untitled Diagram.png…]()
+This is my simple flow and about this project
+![Untitled Diagram](https://github.com/ZedUnderson/WITPW/assets/75055546/f9cc41a6-d46e-41af-aefe-51717737bf94)

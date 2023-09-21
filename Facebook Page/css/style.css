@@ -1,0 +1,199 @@
+/* author: Jose W. Rivas */
+/* mobile first approach */
+
+:root {
+    --background-color: #f0f2f5;
+
+    --border-color: #dddfe2;
+    --border-color-focus: #e7f3ff;
+
+    --primary-blue: #1877f2;
+    --secondary-blue: #046aed;
+    --primary-green: #42b728;
+    --secondary-green: #00AA00;
+}
+
+*, *::after, *::before { /* resets */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1rem; /* 16px by default in most browser settings */
+    background-color: var(--background-color);
+    color: #000;
+    direction: ltr;
+    line-height: 1.125;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    clear: both;
+    display: block;
+    width: 96%;
+    background-color: var(--border-color);
+    height: 1px;
+
+    font-size: 1.0625rem; /* 17px! */
+    margin: 1.625em 0;
+}
+
+/* main */
+main {
+    text-align: center;
+    padding-top: 1.25em;
+    padding-bottom: 10.25em;
+}
+
+/* logo-and-subheading */
+
+img {
+    margin-bottom: -.5em;
+}
+
+h2 {
+    font-size: 1.5rem; /* 24px! */
+    font-weight: 400;
+}
+
+/* card-and-alternative */
+.card-and-alternative {
+    margin-top: 2.75em;
+}
+
+.card {
+    width: 396px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    padding: 1em;
+    padding-bottom: 0;
+}
+
+.card a {
+    font-size: .875rem; /* 14px! */
+    color: var(--primary-blue); 
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    font-size: 1.25rem; /* 20px! */
+    font-weight: 600;
+    padding: .625em 1em;
+    cursor: pointer;
+    background-color: var(--primary-blue);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover, .btn:focus {
+    background-color: var(--secondary-blue);
+}
+
+.btn-secondary {
+    font-size: 1.0625rem; /* 17px! */
+    padding: .875em;
+    margin-bottom: 1.625em;
+    background-color: var(--primary-green);
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+  background-color: var(--secondary-green);
+}
+
+.form-control {
+    width: 100%;
+    margin-bottom: .875em;
+}
+
+input {
+    font-size: 1.0625rem; /* 17px! */
+    padding: .875em;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 2px var(--border-color-focus);
+ 
+}
+
+.alternative {
+    font-size: .875rem; /* 14px! */
+    margin-top: 2em;
+}
+
+.alternative a {
+    color: #000;
+    font-weight: 700;
+}
+
+/* footer */
+footer {
+    background-color: #fff;
+    font-size: .75rem; /* 12px! */
+    padding: 2em 0;
+}
+
+/* general utilities */
+.container {
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* media queries */
+
+@media (min-width: 900px) {
+    img {
+        margin-left: -1.5em;
+    }
+
+    .logo-and-subheading {
+        padding-right: 1em;
+    }
+
+   .flex {
+       flex-direction: row;
+       justify-content: space-between;
+   }
+
+   main {
+       text-align: left;
+       padding-top: 4.5em;
+       padding-bottom: 7em;
+   }
+}
+
+@media (min-width: 1060px) {
+    h2 {
+        font-size: 1.875rem;
+    }
+}

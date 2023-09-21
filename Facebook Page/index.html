@@ -1,57 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="clone of the facebook login page">
-    <meta name="author" content="Jose W. Rivas">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>CodePen - Facebook Login Page (Clone)</title>
+  <link rel="stylesheet" href="./style.css">
 
-    <link rel="stylesheet" href="./css/style.css">
-
-    <title>(Clone)Facebook Log In Page</title>
 </head>
-
 <body>
-    <header>
-        <!--empty-->
-    </header>
-    <main role="main">
-        <div class="container">
-            <div class="content flex">
-                <div class="logo-and-subheading">
-                    <div class="logo">
-                        <img src="./img/facebook_logo.svg" height="106" width="300" alt="facebook logo">
-                    </div>
-                    <div class="subheading">
-                        <h2>Connect with friends and the world<br> around you on Facebook.</h2>
-                    </div>
-                </div>
-                <div class="card-and-alternative flex-column">
-                    <div class="card flex-column">
-                        <form action="index.html">
-                            <input type="email" class="form-control" placeholder="Email or Phone Number" autofocus
-                                required>
-                            <input type="password" class="form-control" placeholder="Password" required>
-                            <button type="submit" class="btn form-control">Log In</button>
-                        </form>
-                        <a href="#">Forgot Password?</a>
-                        <hr>
-                        <button type="button" class="btn btn-secondary">Create New Account</button>
-                    </div>
-                    <div class="alternative">
-                        <p><a href="#">Create a Page</a> for a celebrity, band or business.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div class="container">
-            <p>(clone)Facebook Log In Page by Jose W. Rivas &copy; 2021</p>
-        </div>
-    </footer>
-</body>
+<!-- partial:index.partial.html -->
+<!--
+	  MAIN CONTENT STRAT
+                        -->
+<div class="main-contend-section">
+	<div class="main-container">
+		<div class="w-50">
+			<div class="logo">
+				<img src="https://res.cloudinary.com/drgxflcsb/image/upload/v1681242147/facebook%20clone/logo_mlo10v.svg" alt="Logo">
+			</div>
+			<div class="fb-tag-line">
+				<h3 id="tnk">Connect with friends and the world<br> around you on Facebook.</h3>
+			</div>
+		</div>
+		<div class="w-50">
+			<div class="form-section">
+				<form action="#" method="POST">
+					<input type="text" name="email-or-number" id="email-or-number" placeholder="Email address or phone number">
+					<input type="password" name="password" id="password" placeholder="Password">
+					<input type="submit" name="submit" id="submit" value="Log In">
+					<a href="#" target="_self" class="forgot">Forgotten password?</a>
+					<div class="line"></div>
+					<a href="#" target="_self" class="create-new-acc">Create New Account</a>
+				</form>
+			</div>
+			<div class="create-page" style="text-align: center;">
+				<p><a href="#" target="_self">Create a Page</a> for a celebrity, band or business.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!--
+	  MAIN CONTENT END
+	                  -->
 
+<!--
+	  FOOTER CONTENT STRAT
+	                     -->
+<div class="footer-section">
+	<div class="footer-container">
+		<div class="language-section">
+			<ul>
+				<li>English (UK)</li>
+				<li><a href="#" target="_self">বাংলা</a></li>
+				<li><a href="#" target="_self">অসমীয়া</a></li>
+				<li><a href="#" target="_self">हिन्दी</a></li>
+				<li><a href="#" target="_self">Bahasa Indonesia</a></li>
+				<li><a href="#" target="_self">नेपाली</a></li>
+				<li><a href="#" target="_self">中文(简体)</a></li>
+				<li><a href="#" target="_self">العربية</a></li>
+				<li><a href="#" target="_self">Bahasa Melayu</a></li>
+				<li><a href="#" target="_self">Español</a></li>
+				<li><a href="#" target="_self">Português (Brasil)</a></li>
+				<li><a href="#" target="_self" class="add-more-icon">+</a></li>
+			</ul>
+		</div>
+		<div class="other-pages-link">
+			<div class="line"></div>
+			<ul>
+				<li><a href="#" target="_self">Sign Up</a></li>
+				<li><a href="#" target="_self">Log In</a></li>
+				<li><a href="#" target="_self">Messenger</a></li>
+				<li><a href="#" target="_self">Facebook Lite </a></li>
+				<li><a href="#" target="_self">Watch </a></li>
+				<li><a href="#" target="_self">People</a></li>
+				<li><a href="#" target="_self">Pages</a></li>
+				<li><a href="#" target="_self">Page categories</a></li>
+				<li><a href="#" target="_self">Places</a></li>
+				<li><a href="#" target="_self">Games</a></li>
+				<li><a href="#" target="_self">Locations</a></li>
+				<li><a href="#" target="_self">Marketplace</a></li>
+				<li><a href="#" target="_self">Facebook Pay</a></li>
+				<li><a href="#" target="_self">Groups</a></li>
+				<li><a href="#" target="_self">Jobs</a></li>
+				<li><a href="#" target="_self">Oculus</a></li>
+				<li><a href="#" target="_self">Portal</a></li>
+				<li><a href="#" target="_self">Instagram</a></li>
+				<li><a href="#" target="_self">Local</a></li>
+				<li><a href="#" target="_self">Fundraisers</a></li>
+				<li><a href="#" target="_self">Services</a></li>
+				<li><a href="#" target="_self">Voting Information Centre</a></li>
+				<li><a href="#" target="_self">About</a></li>
+				<li><a href="#" target="_self">Create ad</a></li>
+				<li><a href="#" target="_self">Create Page</a></li>
+				<li><a href="#" target="_self">Developers</a></li>
+				<li><a href="#" target="_self">Careers</a></li>
+				<li><a href="#" target="_self">Privacy</a></li>
+				<li><a href="#" target="_self">Cookies</a></li>
+				<li><a href="#" target="_self">AdChoices<div class="ad-icon"><img src="https://res.cloudinary.com/drgxflcsb/image/upload/v1681242146/facebook%20clone/ad-icon_k9ged1.png" alt="ad-icon"></div></a></li>
+				<li><a href="#" target="_self">Terms</a></li>
+				<li><a href="#" target="_self">Help</a></li>
+			</ul>
+		</div>
+		<div class="copywrite">
+			<p>Facebook &copy; 2023</p>
+		</div>
+	</div>
+</div>
+<!-- partial -->
+  
+</body>
 </html>

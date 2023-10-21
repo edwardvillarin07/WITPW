@@ -20,7 +20,7 @@ public class Main
       Statement stm = con.createStatement();
       ResultSet res = stm.executeQuery(query);
     
-      String columns[] = { "ID", "Name", "Age" };
+      String columns[] = { "ID", "Name", "Password" };
       String data[][] = new String[8][3];
     
       int i = 0;
